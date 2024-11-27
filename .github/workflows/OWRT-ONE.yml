@@ -37,15 +37,15 @@ jobs:
       #默认主机名
       WRT_NAME: OWRT
       #默认WIFI名
-      WRT_WIFI: OWRT
+      WRT_WIFI: Seven Win
       #默认地址
       WRT_IP: 192.168.10.1
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
-      WRT_REPO: https://github.com/immortalwrt/immortalwrt.git
+      WRT_REPO: https://github.com/VIKINGYFY/immortalwrt.git
       #源码分支
-      WRT_BRANCH: master
+      WRT_BRANCH: main
       #插件调整
       WRT_PACKAGE: ${{inputs.PACKAGE}}
       #仅输出配置文件
