@@ -23,7 +23,7 @@ UPDATE_PACKAGE() {
 #UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 #UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
-UPDATE_PACKAGE "istore" "linkease/istore" "main"
+#编译不通过UPDATE_PACKAGE "istore" "linkease/istore" "main"
 #UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 #UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
 #UPDATE_PACKAGE "nekoclash" "Thaolga/luci-app-nekoclash" "main"
@@ -38,7 +38,7 @@ UPDATE_PACKAGE "luci-app-advancedplus" "VIKINGYFY/packages" "main" "pkg"
 UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 #UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
-UPDATE_PACKAGE "luci-app-timecontrol" "4IceG/luci-app-timecontrol" "main"
+#编译不通过UPDATE_PACKAGE "luci-app-timecontrol" "4IceG/luci-app-timecontrol" "main"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
