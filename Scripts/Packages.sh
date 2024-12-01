@@ -23,7 +23,7 @@ UPDATE_PACKAGE() {
 #UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 #UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
-#编译不通过UPDATE_PACKAGE "istore" "linkease/istore" "main"
+UPDATE_PACKAGE "istore" "padavanonly/immortalwrt-mt798x/package/istore" "openwrt-21.02"
 #UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 #UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
 #UPDATE_PACKAGE "nekoclash" "Thaolga/luci-app-nekoclash" "main"
