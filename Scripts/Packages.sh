@@ -41,6 +41,7 @@ UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 UPDATE_PACKAGE "luci-app-easymesh" "shuishihan/luci-app-easymesh" "master"
 UPDATE_PACKAGE "luci-app-accesscontrol-plus" "kingyond/luci-app-accesscontrol-plus" "main"
+UPDATE_PACKAGE "istore" "linkease/istore" "main"
 #UPDATE_PACKAGE "luci-app-xupnpd" "jarod360/luci-app-xupnpd" "main"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
