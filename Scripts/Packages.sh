@@ -43,6 +43,9 @@ UPDATE_PACKAGE "luci-app-easymesh" "shuishihan/luci-app-easymesh" "master"
 UPDATE_PACKAGE "luci-app-accesscontrol-plus" "kingyond/luci-app-accesscontrol-plus" "main"
 #UPDATE_PACKAGE "istore" "linkease/istore" "main"
 #UPDATE_PACKAGE "luci-app-xupnpd" "jarod360/luci-app-xupnpd" "main"
+UPDATE_PACKAGE "luci-app-atcommands" "4IceG/luci-app-atcommands" "main"
+UPDATE_PACKAGE "luci-app-modemband" "4IceG/luci-app-modemband" "main"
+UPDATE_PACKAGE "luci-app-modemdefine" "4IceG/luci-app-modemdefine" "main"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
