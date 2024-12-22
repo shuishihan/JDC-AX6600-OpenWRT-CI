@@ -12,3 +12,5 @@ CONFIG_PACKAGE_luci-app-store=y
 #内核增加打印机服务插件
 CONFIG_PACKAGE_kmod-lp=y
 CONFIG_PACKAGE_kmod-usb-printer=y
+#短信转发
+CONFIG_PACKAGE_luci-app-sms-tool-js=y
