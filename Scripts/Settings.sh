@@ -30,8 +30,6 @@ CFG_FILE="./package/base-files/files/bin/config_generate"
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $CFG_FILE
 #修改默认主机名
 sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
-#修改雅典娜和亚瑟内核大小为12M
-sed -i 's/6144k/12288k/g' $GITHUB_WORKSPACE/wrt/target/linux/qualcommax/image/ipq60xx.mk
 
 #配置文件修改
 echo "CONFIG_PACKAGE_luci=y" >> ./.config
@@ -49,10 +47,9 @@ if [[ $WRT_TARGET == *"IPQ"* ]]; then
 	#取消nss相关feed
 	echo "CONFIG_FEED_nss_packages=n" >> ./.config
 	echo "CONFIG_FEED_sqm_scripts_nss=n" >> ./.config
-
-	if [[ $WRT_TARGET == *"60XX"* ]]; then
-		#设置NSS版本
-		echo "CONFIG_NSS_FIRMWARE_VERSION_11_4=n" >> ./.config
-		echo "CONFIG_NSS_FIRMWARE_VERSION_12_2=y" >> ./.config
-	fi
+	#设置NSS版本
+	echo "CONFIG_NSS_FIRMWARE_VERSION_11_4=n" >> ./.config
+	echo "CONFIG_NSS_FIRMWARE_VERSION_12_2=y" >> ./.config
 fi
+#修改雅典娜和亚瑟内核大小为12M
+sed -i 's/6144k/12288k/g' $GITHUB_WORKSPACE/wrt/target/linux/qualcommax/image/ipq60xx.mk
