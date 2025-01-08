@@ -57,3 +57,5 @@ if [[ $WRT_TARGET != *"X86"* ]]; then
 	echo "CONFIG_TARGET_OPTIONS=y" >> ./.config
 	echo "CONFIG_TARGET_OPTIMIZATION=\"-O2 -pipe -march=armv8-a+crypto+crc -mcpu=cortex-a53+crypto+crc -mtune=cortex-a53\"" >> ./.config
 fi
+#修改雅典娜和亚瑟内核大小为12M
+sed -i 's/6144k/12288k/g' $GITHUB_WORKSPACE/wrt/target/linux/qualcommax/image/ipq60xx.mk
