@@ -59,3 +59,6 @@ if [[ $WRT_TARGET != *"X86"* ]]; then
 fi
 #修改雅典娜和亚瑟内核大小为12M
 sed -i 's/6144k/12288k/g' $GITHUB_WORKSPACE/wrt/target/linux/qualcommax/image/ipq60xx.mk
+#测试，关闭LED
+cp S99turnoffled $GITHUB_WORKSPACE/wrt/files/etc/rc.d
+chmod 777 $GITHUB_WORKSPACE/wrt/files/etc/rc.d/S99turnoffled
