@@ -1,5 +1,5 @@
 # OpenWRT-CI
-云编译OpenWRT固件
+云编译OpenWRT固件，雅典娜和亚瑟等ipq60xx的内核为12M，需配合恩山论坛里的大内核uboot和gpt。
 
 官方版：
 https://github.com/immortalwrt/immortalwrt.git
