@@ -69,6 +69,10 @@ UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 UPDATE_PACKAGE "qmodem" "FUjr/modem_feeds" "main"
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
+UPDATE_PACKAGE "luci-app-accesscontrol-plus" "kingyond/luci-app-accesscontrol-plus" "main"
+UPDATE_PACKAGE "luci-app-atcommands" "4IceG/luci-app-atcommands" "main"
+UPDATE_PACKAGE "luci-app-modemband" "4IceG/luci-app-modemband" "main"
+UPDATE_PACKAGE "luci-app-modemdefine" "4IceG/luci-app-modemdefine" "main"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
